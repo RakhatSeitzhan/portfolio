@@ -1,8 +1,0 @@
-.About_container{
-    width: 60%;
-}
-@media (max-width: 900px) {
-    .About_container{
-        width: 80% !important;
-    }
-} 
