@@ -1,0 +1,51 @@
+.Education-image{
+    transition: all 0.7s;
+    opacity: 1;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+.Education-blank{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.26);
+    transition: all 0.5s;
+}
+.Education-item{
+    border:white 15px solid;
+}
+.Education-logo {
+    transition: all 0.5s;
+    z-index: 10;
+    background: white;
+    border: 20px solid white;
+    border-radius: 50%;
+}
+.Education-item:hover > .Education-image{
+    opacity: 0;
+    height: 120%;
+}
+.Education-item:hover > .Education-blank{
+    opacity: 0;
+}
+.Education-item:hover > .Education-logo{
+    opacity: 0;
+}
+.Education-button{
+    text-decoration: none !important;
+    border: 3px solid #88c382;
+    background: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.Education-button:hover{
+    background: #88c382;
+    color: white;
+}
