@@ -1,0 +1,17 @@
+.carousel_item{
+    border-radius: 30px;
+    overflow: hidden;
+    height: 55vh;
+}
+.carousel_container{
+    transform: translateY(-25%);
+    height: 65vh;
+}
+.carousel_row{
+    height: 100%;
+}
+.carousel_image{
+    width: 90%;
+    object-fit: contain;
+    align-self: flex-end;
+}
