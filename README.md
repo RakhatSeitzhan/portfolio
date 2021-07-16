@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 My portfolio source code for those who need it :)
 
 To run the project:
