@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const Feedback = require('./schema.js')
 const cors = require('cors')
 const path = require('path')
-
+const password = '' //Passwords from the database
 
 const app = express()
 app.use(express.urlencoded({extended: true}))
@@ -13,7 +13,7 @@ app.use(cors())
 console.log(path.resolve(__dirname, './profile/build'))
 app.use(express.static(path.resolve(__dirname, './profile/build')))
 
-mongoose.connect('mongodb+srv://general:F@tima2013@cluster0.pi4v3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(`mongodb+srv://general:${password}@cluster0.pi4v3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
